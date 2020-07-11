@@ -8,7 +8,7 @@ def getWeather(inputString):
     # FORMAT: https://geocode.search.hereapi.com/v1/geocode?q=5+Rue+Daunou%2C+75000+Paris%2C+France
 
     locationString = inputString.replace(" ", "+")
-    apiKey = 'Add Your API Key Here'
+    apiKey = 'Add Your HERE Maps API Key Here'
 
     url = ('https://weather.ls.hereapi.com/weather/1.0/report.json?product=observation&name=%s&apiKey=%s'
            %(locationString, apiKey))
